@@ -4,11 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-    <title>Datepicker Sample using Public Package</title>
+    <title>Datepicker Samples using NPM Public Package</title>
 
-    <!-- <script type="module" src="./bundle.js"></script> -->
-    <!-- <script nomodule src="./date-picker.js"></script> 
-    <script src='./node_modules/@rakeshjst/date-picker-stencil/dist/date-picker.js'></script>-->
     <script type="module" src="https://unpkg.com/@jstigers/date-picker-stencil@0.0.4/dist/date-picker/date-picker.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/@jstigers/date-picker-stencil@0.0.4/dist/date-picker/date-picker.js"></script>
     <script>
@@ -21,8 +18,7 @@
               "lowerDateLimit": "2019-07-15",
               "upperDateLimit": "2019-09-15"
           };
-          element.setAttribute('options', JSON.stringify(options));
-          setValue('datepicker1');
+          element.setAttribute('options', JSON.stringify(options));          
       }
 
       function displayValue(id, divId){
@@ -43,26 +39,26 @@
 
 <body onload="bodyOnload();">
 
-    <h2>Datepicker Sample using Public Package</h2>
+    <h2>Datepicker Samples using NPM Public Package</h2>
      <!-- Sample Usage: Options Set by JS-->
      <p>{"displayFormat": "MM/DD/YYYY", "iconAlignment":"Right", "dateStringAlignment": "Left", "lowerDateLimit":
         "2019-07-15", "upperDateLimit": "2019-09-15"}</p>
     <date-picker id="datepicker1"></date-picker>
-
+    <br />
     <div id="datevalue1"></div>
 
     <button onclick="displayValue('datepicker1', 'datevalue1');">Display</button>
-    <button onclick="setValue('datepicker1');">Set Value</button>
+    <button onclick="setValue('datepicker1');">Set Value to 09/01/2019</button>
 
     <!-- Sample Usage: Options Set in HTML-->
     <p>{"displayFormat": "DD/MM/YYYY", "iconAlignment":"Left", "dateStringAlignment": "Right", "lowerDateLimit":
         "2019-08-10", "upperDateLimit": "2019-08-17"}</p>
     <date-picker id="datepicker2" options='{"displayFormat": "DD/MM/YYYY", "iconAlignment":"Left", "dateStringAlignment": "Right", "lowerDateLimit": "2019-08-10", "upperDateLimit": "2019-09-17"}'></date-picker>
-
+    <br />
     <div id="datevalue2"></div>
 
     <button onclick="displayValue('datepicker2', 'datevalue2');">Display</button>
-    <button onclick="setValue('datepicker2');">Set Value</button>
-</body>
+    <button onclick="setValue('datepicker2');">Set Value to 09/01/2019</button>
+</body> 
 
 </html>
