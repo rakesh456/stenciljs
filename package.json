@@ -1,0 +1,45 @@
+{
+  "name": "@jstigers/date-picker-stencil",
+  "version": "0.0.4",
+  "description": "Stencil Component",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/date-picker/date-picker.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "dependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "resize-observer-polyfill": "^1.5.1",
+    "webpack": "^4.39.3"
+  },
+  "scripts": {
+    "build": "stencil build --docs",
+    "docs.data": "stencil build --docs-json docs.json",
+    "start": "stencil build --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
+  },
+  "devDependencies": {
+    "@stencil/core": "1.2.3",
+    "tslint": "^5.11.0",
+    "typescript": "^2.9.1",
+    "webpack-cli": "^3.3.7"
+  },
+  "license": "MIT",
+  "author": "jstiger",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakesh456/stenciljs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rakesh456/stenciljs/issues"
+  },
+  "homepage": "https://github.com/rakesh456/stenciljs#readme"
+}

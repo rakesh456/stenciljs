@@ -1,0 +1,70 @@
+{
+  "timestamp": "2019-08-08T10:34:10",
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "1.2.3",
+    "typescriptVersion": "3.5.3"
+  },
+  "components": [
+    {
+      "tag": "fintellix-choice",
+      "encapsulation": "shadow",
+      "readme": "# fintellix-choice\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "styles": [],
+      "slots": []
+    },
+    {
+      "tag": "my-component",
+      "encapsulation": "shadow",
+      "readme": "# my-component\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "first",
+          "type": "string",
+          "mutable": false,
+          "attr": "first",
+          "reflectToAttr": false,
+          "docs": "The first name",
+          "docsTags": [],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "last",
+          "type": "string",
+          "mutable": false,
+          "attr": "last",
+          "reflectToAttr": false,
+          "docs": "The last name",
+          "docsTags": [],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "middle",
+          "type": "string",
+          "mutable": false,
+          "attr": "middle",
+          "reflectToAttr": false,
+          "docs": "The middle name",
+          "docsTags": [],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "styles": [],
+      "slots": []
+    }
+  ]
+}
